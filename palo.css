@@ -17,3 +17,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-half video:hover{opacity: 0.6; transition: 0.3s;}
 video {width: 100%;}
 .w3-third img{margin: 5px; cursor: pointer;}
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
