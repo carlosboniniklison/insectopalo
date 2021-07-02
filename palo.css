@@ -6,15 +6,21 @@ autor: Carlos Boni
 fecha: 26 junio 2021
 */
 
+@font-face {
+  font-family: pangolin;
+  src: url(Pangolin-Regular.ttf);
+}
+
 :root {
     --azulclaro: #e6f2ff;
   }
 
 * {
-  font-size:18px;
+  font-family: pangolin;
+    font-size:18px;
 }
   
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+/* body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif} */
 .w3-half img{margin-bottom: -6px; cursor: pointer;}
 .w3-half img:hover{opacity: 0.6; transition: 0.3s;}
 .w3-half video{margin-bottom: -6px; cursor: pointer;}
@@ -70,9 +76,9 @@ a.whatsapp {
 
 .text-block {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
+  bottom: 40px;
+  right: 10px;
+  background-color:rgba(0,0,0,0.5);
   color: white;
   padding-left: 20px;
   padding-right: 20px;
