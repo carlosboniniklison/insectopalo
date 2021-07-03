@@ -24,17 +24,18 @@ fecha: 26 Junio 2021
   <title>Adopta Insectos Palo en Vélez-Málaga</title>
 
   <link rel="preload" href="w3.css" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    as="style">
   <link rel="preload" href="palo.css" as="style">
   <link rel="preload" href="jquery.min.js" as="script">
   <link rel="preload" href="palo.js" as="script">
-  
+
   <!-- una hoja de estilos externa-->
   <link rel="stylesheet" href="w3.css">
 
   <!-- una hoja de estilos personalizada-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-	<link href="palo.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="palo.css" rel="stylesheet" />
 
   <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
   <script defer src="jquery.min.js"></script>
@@ -55,8 +56,10 @@ fecha: 26 Junio 2021
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-white w3-xlarge w3-padding-8">
-    <span id="titulo" class="w3-left w3-padding">Adopta Insectos palo en Vélez-Málaga</span>
+  <header class="w3-container w3-top w3-transparent w3-xlarge w3-padding-8">
+    <span id="titulo" class="w3-center">
+      <h1>Adopta Insectos palo en Vélez-Málaga</h1>
+    </span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
   </header>
 
@@ -177,14 +180,17 @@ fecha: 26 Junio 2021
     </div>
 
     <!-- About section -->
-    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-      <h2>Opciones de adopción de tus Insectos Palo</h2>
+    <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h2>ADOPTA YA TUS INSECTOS PALO</h2>
+    </div>
+    <div class="w3-container w3-transparent w3-center w3-text-light-grey w3-padding-32">
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
           <ul class="w3-ul w3-white w3-center">
             <li class="w3-black w3-xlarge w3-padding-32">Familia Palo <mark>pequeña</mark></li>
             <li class="w3-padding-16">3 (tres) Insectos Palo</li>
-            <li class="w3-padding-16">Caja plástica con respiradero:<br />para su primera casa<br />y como transportín
+            <li class="w3-padding-16">Caja plástica transparente<br />con respiradero:<br />para su primera casa<br />y
+              como transportín
             </li>
             <li class="w3-padding-16">con sustrato, palos y alimento.</li>
             <li class="w3-padding-16">Y hojas de mora para 2 semanas.</li>
@@ -209,12 +215,13 @@ fecha: 26 Junio 2021
           <ul class="w3-ul w3-white w3-center">
             <li class="w3-black w3-xlarge w3-padding-32">Familia Palo <mark>numerosa</mark></li>
             <li class="w3-padding-16">6 (seis) Insectos Palo</li>
-            <li class="w3-padding-16">Caja plástica con respiradero:<br />para su primera casa<br />y como transportín
+            <li class="w3-padding-16">Caja plástica transparente<br />más grande, con respiradero:<br />para su primera
+              casa<br />y como transportín
             </li>
             <li class="w3-padding-16">con sustrato, palos y alimento.</li>
             <li class="w3-padding-16">Y hojas de mora para 2 semanas.</li>
             <li class="w3-padding-16">
-              <h2>€ 10 (*)</h2>
+              <h2>€ 9 (*)</h2>
             </li>
             <li class="w3-light-grey w3-padding-24">
               <!-- <button class="w3-button w3-white w3-padding-large"> -->
@@ -242,34 +249,13 @@ fecha: 26 Junio 2021
   <!-- Footer -->
   <footer>
     <br />
-    <div class="w3-black w3-center w3-padding-24">&copy; 2021 - Diseño Web <a href="https://carlosboni.com"
-        target="_blank" title="Prof. Carlos Boni" class="w3-hover-opacity">Prof. Carlos Boni</a></div>
+    <div id="pie" class="w3-transparent w3-center w3-padding-24">&copy; 2021 - Diseño Web <a
+        href="https://carlosboni.com" target="_blank" title="Prof. Carlos Boni" class="w3-hover-opacity">Prof. Carlos
+        Boni</a></div>
   </footer>
 
   <!-- End page content -->
   </div>
-
-  <script>
-    // Script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
-
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-  </script>
 
 
 </body>

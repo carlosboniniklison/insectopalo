@@ -15,18 +15,38 @@ fecha: 26 junio 2021
     --azulclaro: #e6f2ff;
   }
 
-* {
-  font-family: pangolin;
-    font-size:18px;
+body {
+  background-image: url("media/sustrato.png");
+  background-repeat: repeat;
+  background-color: black;
 }
-  
-/* body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif} */
-.w3-half img{margin-bottom: -6px; cursor: pointer;}
-.w3-half img:hover{opacity: 0.6; transition: 0.3s;}
-.w3-half video{margin-bottom: -6px; cursor: pointer;}
-.w3-half video:hover{opacity: 0.6; transition: 0.3s;}
+
+body,h1,h2,h3,h4,h5 {
+  font-family: pangolin;
+  font-size:1.1em;
+}
+
+
+.w3-half {background-color:black;}
+
+.w3-half img{opacity: 0.6; margin-bottom: -6px; cursor: pointer;}
+.w3-half img:hover{opacity: 1; transition: 0.3s;}
+.w3-half video{opacity: 0.6; margin-bottom: -6px; cursor: pointer;}
+.w3-half video:hover{opacity: 1; transition: 0.3s;}
 video {width: 100%;}
 .w3-third img{margin: 5px; cursor: pointer;}
+
+#titulo {
+  color: #ffe0b3;
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#pie {
+  color: #ffe0b3;
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 4px #000000;
+}
 
 .whatsappContactar {
   position:fixed;
@@ -84,18 +104,25 @@ a.whatsapp {
   padding-right: 20px;
 }
 
+.w3-main.w3-content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
 @media screen and (max-width:900px) {
   #WS-flotante {
     display:none;
   }
 }
 
-@media screen and (max-width:550px) {
+/* @media screen and (max-width:550px) {
   #titulo {
     display:none;
   }
 }
-
+ */
+ 
 @media screen and (max-width:360px) {
   .text-block {
     display:none;
